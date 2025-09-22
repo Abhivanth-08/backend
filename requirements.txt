@@ -1,13 +1,14 @@
+python==3.11
 # Core FastAPI and web framework
 fastapi==0.104.1
 uvicorn[standard]==0.24.0
 
-# PDF processing and document handling
-PyMuPDF==1.23.8
+# PDF processing and document handling - Using pre-built wheels
+PyMuPDF==1.23.26
 docling==1.5.0
 
-# Image processing and computer vision
-opencv-python==4.8.1.78
+# Image processing and computer vision - Using headless versions for cloud deployment
+opencv-python-headless==4.8.1.78
 scikit-image==0.22.0
 Pillow==10.1.0
 numpy==1.24.3
@@ -28,9 +29,6 @@ PyYAML==6.0.1
 # File handling and utilities
 python-multipart==0.0.6
 
-# Optional: if you need additional image processing
-matplotlib==3.7.2
-
-# Development and testing (optional)
-# pytest==7.4.3
-# pytest-asyncio==0.21.1
+# Additional system dependencies for cloud deployment
+setuptools==69.0.0
+wheel==0.42.0
